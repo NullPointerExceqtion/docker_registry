@@ -1,0 +1,9 @@
+version: '3'
+services:
+  registry:
+    image: registry:2.3.0
+    ports: 
+      - '5000:5000'
+    volumes:
+      - ./var:/var/lib/registry
+
